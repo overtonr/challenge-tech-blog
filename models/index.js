@@ -18,6 +18,7 @@ Blog.hasMany(Comment, {
 })
 
 Comment.belongsTo(Blog,{
+    //through user?
     foreignKey: 'post_id'
 });
 
