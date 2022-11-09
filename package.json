@@ -1,0 +1,24 @@
+{
+  "name": "challenge-tech-blog",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overtonr/challenge-tech-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/overtonr/challenge-tech-blog/issues"
+  },
+  "homepage": "https://github.com/overtonr/challenge-tech-blog#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
