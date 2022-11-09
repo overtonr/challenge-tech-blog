@@ -1,40 +1,90 @@
-# 14 Model-View-Controller (MVC): Tech Blog
+# Challenge: Tech Blog
 
+[Tech Blog](https://overtonr-tech-blog.herokuapp.com/)
 
-## Acceptance Criteria
+<br>
 
-```md
-GIVEN a CMS-style blog site
-WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
-WHEN I click on the homepage option
-THEN I am taken to the homepage
-WHEN I click on any other links in the navigation
-THEN I am prompted to either sign up or sign in
-WHEN I choose to sign up
-THEN I am prompted to create a username and password
-WHEN I click on the sign-up button
-THEN my user credentials are saved and I am logged into the site
-WHEN I revisit the site at a later time and choose to sign in
-THEN I am prompted to enter my username and password
-WHEN I am signed in to the site
-THEN I see navigation links for the homepage, the dashboard, and the option to log out
-WHEN I click on the homepage option in the navigation
-THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
-WHEN I click on an existing blog post
-THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
-WHEN I enter a comment and click on the submit button while signed in
-THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-WHEN I click on the dashboard option in the navigation
-THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
-WHEN I click on the button to add a new blog post
-THEN I am prompted to enter both a title and contents for my blog post
-WHEN I click on the button to create a new blog post
-THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-WHEN I click on one of my existing posts in the dashboard
-THEN I am able to delete or update my post and taken back to an updated dashboard
-WHEN I click on the logout option in the navigation
-THEN I am signed out of the site
-WHEN I am idle on the page for more than a set time
-THEN I am automatically signed out of the site 
+## Description
+This CMS-style blog allows users to publish a blog post as well as comment on other blog posts. The ability to update and delete existing posts is also an option! Built with no starter code, this application follows the MVC paradigm. The application uses Handlebars to dynamically generate content onto the page depending on whether the user is logged in or not.
 ```
+```
+Session data is stored so that data persists as long as the server is running.
+
+```js
+const ses = {
+    secret: '',
+    cookie: {},
+    resave: false,
+    saveUnitialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    })
+};
+```
+
+
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<br>
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Collaborators](#collaborators)
+- [Questions](#questions)
+
+<br>
+
+## Installation
+No installation required.
+
+<br>
+
+## Usage
+The homepage for the deployed website displays any existing blog posts.
+[]
+
+<br>
+
+Users can clink the links on the navigation bar to log in to their account. If a user has not made an account yet, they must fill in the sign up form to create an account. 
+[]
+
+<br>
+
+They will then be able to log in and create a blog post by giving it a title and typing in the content for the post.
+[]
+
+<br>
+
+Users also have the option to comment on an existing blog post that is present on their dashboard. After submitted, the comment will be displayed under the blog submission.
+[]
+
+<br>
+
+There is also the option to update or delete an existing blog post:
+[]
+
+<br>
+
+Make sure you don't forget to log out after posting, commenting, updating, and deleting content!
+
+
+
+
+<br>
+
+## License
+This application is covered under the MIT License
+
+<br>
+
+## Collaborators
+None
+
+<br>
+
+## Questions
+https://github.com/overtonr
