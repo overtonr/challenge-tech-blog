@@ -8,9 +8,14 @@ User.hasMany(Blog, {
 
 Blog.belongsTo(User,{
     foreignKey: 'user_id',
-    //Comment does not exist without blog
     onDelete: 'CASCADE'
 });
+
+//Comment does not exist without blog
+Blog.hasMany(Comment, {
+    foreignKey: 'post_id',
+    onDelete: 'CASCADE'
+})
 
 Comment.belongsTo(Blog,{
     foreignKey: 'post_id'
