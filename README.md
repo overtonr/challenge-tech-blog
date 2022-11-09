@@ -4,6 +4,8 @@ Deployed Link : [Tech Blog](https://overtonr-tech-blog.herokuapp.com/)
 
 <br>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
 This CMS-style blog allows users to publish a blog post as well as comment on other blog posts. The ability to update and delete existing posts is also an option! Built with no starter code, this application follows the MVC paradigm. The application uses Handlebars to dynamically generate content onto the page depending on whether the user is logged in or not.
 ```
@@ -23,8 +25,6 @@ const ses = {
 ```
 
 
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <br>
 

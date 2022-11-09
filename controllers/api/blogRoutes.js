@@ -17,6 +17,8 @@ router.post('/', hasAuth, async (req, res) => {
 
 });
 
+//get route for comments
+
 module.exports = router;
 
 
