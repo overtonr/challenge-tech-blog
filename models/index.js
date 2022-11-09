@@ -1,5 +1,5 @@
 const User = require('./User');
-const Blog = require('./Blogs');
+const Blog = require('./Blog');
 
 User.hasMany(Blog, {
     foreignKey: 'user_id',
@@ -7,7 +7,9 @@ User.hasMany(Blog, {
 });
 
 Blog.belongsTo(User,{
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    //Comment does not exist without blog
+    onDelete: 'CASCADE'
 });
 
 Comment.belongsTo(Blog,{
