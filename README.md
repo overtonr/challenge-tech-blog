@@ -1,6 +1,6 @@
 # Challenge: Tech Blog
 
-[Tech Blog](https://overtonr-tech-blog.herokuapp.com/)
+Deployed Link : [Tech Blog](https://overtonr-tech-blog.herokuapp.com/)
 
 <br>
 
